@@ -1,0 +1,10 @@
+{
+  "role": {
+    "admin": "ADMIN",
+    "doctor": "DOCTOR",
+    "nurse": "NURSE",
+    "patient": "PATIENT",
+    "sale": "SALE",
+  "receptionist": "RECEPTIONIST"
+  }
+}
