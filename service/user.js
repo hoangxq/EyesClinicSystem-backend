@@ -49,6 +49,30 @@ const getUserByID = async (user_id) => {
     },
   };
 };
+
+const getUserByPhoneNumber = async (user_phone) => {
+  const user_info = await User.findOne({ phone: user_phone });
+  // const decodePassword = await security.decodePassword(user_info.password)
+  console.log(user_info)
+  return {
+    user_info: {
+      name: user_info.name,
+      status: user_info.status,
+      _id: user_info._id,
+      phone: user_info.phone,
+      // password: decodePassword,
+      role: user_info.role,
+      email: user_info.email,
+      address: user_info.address,
+      gender: user_info.gender,
+      dob: convertDate.convertDOBFormat(user_info.dob),
+      age: user_info.age,
+      created_at: user_info.created_at,
+      updated_at: user_info.updated_at,
+      __v: user_info.__v,
+    },
+  };
+};
 const createUser = async ({ phone, password, role ,email,  name, address, gender, dob }) => {
   const isExist = await User.exists({ phone });
   if (isExist) {
@@ -138,5 +162,6 @@ module.exports = {
   updateUserByID,
   checkExistUser,
   getUserPassword,
-  getAllUserDoctor
+  getAllUserDoctor,
+  getUserByPhoneNumber
 };

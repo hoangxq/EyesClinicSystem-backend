@@ -10,7 +10,7 @@ Route.get(
     Trycatch(invoiceController.getAllInvoice)
 );
 Route.get(
-    '/:user_id',
+    '/patient/:user_id',
     // requireLogin,
     // requireRole(['ADMIN']),
     Trycatch(invoiceController.getAllInvoiceByUserId)
@@ -32,6 +32,20 @@ Route.get(
     requireLogin,
     // requireRole(['ADMIN', '']),
     Trycatch(invoiceController.getInvoiceInfo)
+);
+
+Route.post(
+    '/payByCash/:invoice_id',
+    requireLogin,
+    // requireRole(['ADMIN', '']),
+    Trycatch(invoiceController.paidByCash)
+);
+
+Route.post(
+    '/refundByCash/:invoice_id',
+    requireLogin,
+    // requireRole(['ADMIN', '']),
+    Trycatch(invoiceController.refundByCash)
 );
 
 Route.post('/updateInvoiceStatus', async (req, res) => {

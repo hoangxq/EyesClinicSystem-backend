@@ -21,6 +21,13 @@ Route.get(
   // requireRole(['ADMIN', '']),
   Trycatch(userController.getUserInfo)
 );
+
+Route.get(
+  '/get/info_byphone',
+  requireLogin,
+  // requireRole(['ADMIN', '']),
+  Trycatch(userController.getUserByPhoneNumber)
+);
 Route.post(
   '/',
   // requireLogin,

@@ -3159,3 +3159,349 @@
     at D:\Prj3\EyesClinicSystem\backend\node_modules\express\lib\router\index.js:286:9
     at Function.process_params (D:\Prj3\EyesClinicSystem\backend\node_modules\express\lib\router\index.js:346:12)
     
+    00:03 30/06/2024 | [SYSTEM] |  GET /api/doctor | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getAllDoctor (D:\Prj3\EyesClinicSystem\backend\service\doctor.js:32:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllDoctor (D:\Prj3\EyesClinicSystem\backend\controller\doctor.js:14:25)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 30/06/2024 | [SYSTEM] |  GET /api/doctor | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getAllDoctor (D:\Prj3\EyesClinicSystem\backend\service\doctor.js:32:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllDoctor (D:\Prj3\EyesClinicSystem\backend\controller\doctor.js:14:25)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 30/06/2024 | [SYSTEM] |  GET /api/doctor | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getAllDoctor (D:\Prj3\EyesClinicSystem\backend\service\doctor.js:32:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllDoctor (D:\Prj3\EyesClinicSystem\backend\controller\doctor.js:14:25)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:07 30/06/2024 | [SYSTEM] |  GET /api/doctor | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getAllDoctor (D:\Prj3\EyesClinicSystem\backend\service\doctor.js:32:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllDoctor (D:\Prj3\EyesClinicSystem\backend\controller\doctor.js:14:25)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:08 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:08 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:08 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:08 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:08 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:08 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:08 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:08 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:09 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:09 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:09 30/06/2024 | [SYSTEM] |  POST /api/auth-user/login | [::1] 
+ TypeError: Cannot read properties of undefined (reading 'refresh_token')
+    at login (D:\Prj3\EyesClinicSystem\backend\controller\authUser.js:40:43)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    23:46 01/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:58:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:34:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    23:47 01/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:34:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    23:48 01/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone | [::1] 
+ CastError: Cast to string failed for value "{}" (type Object) at path "phone" for model "User"
+    at model.Query.exec (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4498:21)
+    at Query.then (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4592:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    
+    23:49 01/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone | [::1] 
+ CastError: Cast to string failed for value "{}" (type Object) at path "phone" for model "User"
+    at model.Query.exec (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4498:21)
+    at Query.then (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4592:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    
+    23:57 01/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone | [::1] 
+ CastError: Cast to string failed for value "{}" (type Object) at path "phone" for model "User"
+    at model.Query.exec (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4498:21)
+    at Query.then (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4592:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    
+    23:57 01/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone | [::1] 
+ CastError: Cast to string failed for value "{}" (type Object) at path "phone" for model "User"
+    at model.Query.exec (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4498:21)
+    at Query.then (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4592:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=0 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=03 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=037 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=0372 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=037 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=0373 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=03733 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=037331 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=0373317 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=03733174 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:01 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=037331749 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=http:%2F%2F202.191.56.254:8000%2Flog-check%2F2024.07.01.23.16.269U8NNHGG%2Freport.pdf | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=0 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=03 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=037 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=0373 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=03733 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=037331 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=0373317 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=03733174 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:03 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=037331749 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:25 02/07/2024 | [SYSTEM] |  POST /api/doctor_schedule/register/667d96d099024da1a8397cb9 | [::1] 
+ CastError: Cast to ObjectId failed for value "{ scheduleId: '667d96d099024da1a8397cb9' }" (type Object) at path "_id" for model "Schedule"
+    at model.Query.exec (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4498:21)
+    at Query.then (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4592:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    
+    00:26 02/07/2024 | [SYSTEM] |  POST /api/doctor_schedule/register/667d96d099024da1a8397cb9 | [::1] 
+ CastError: Cast to ObjectId failed for value "{ scheduleId: '667d96d099024da1a8397cb9' }" (type Object) at path "_id" for model "Schedule"
+    at model.Query.exec (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4498:21)
+    at Query.then (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4592:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    
+    00:42 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=0987817181 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    00:47 02/07/2024 | [SYSTEM] |  GET /api/user/get/info_byphone?phone=0876565454 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\service\user.js:59:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getUserByPhoneNumber (D:\Prj3\EyesClinicSystem\backend\controller\user.js:35:21)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    23:07 08/07/2024 | [SYSTEM] |  DELETE /api/doctor_schedule/667b7c99952ac66d084e3adf | [::1] 
+ TypeError: Cannot read properties of null (reading 'scheduleId')
+    at Object.deleteDoctorSchedule (D:\Prj3\EyesClinicSystem\backend\service\doctorSchedule.js:301:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async deleteDoctorSchedule (D:\Prj3\EyesClinicSystem\backend\controller\doctorSchedule.js:56:9)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    23:07 08/07/2024 | [SYSTEM] |  DELETE /api/doctor_schedule/667a8a83629ce271cc73d3ec | [::1] 
+ TypeError: Cannot read properties of null (reading 'scheduleId')
+    at Object.deleteDoctorSchedule (D:\Prj3\EyesClinicSystem\backend\service\doctorSchedule.js:301:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async deleteDoctorSchedule (D:\Prj3\EyesClinicSystem\backend\controller\doctorSchedule.js:56:9)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    23:07 08/07/2024 | [SYSTEM] |  DELETE /api/doctor_schedule/667f03775467160afc734cab | [::1] 
+ TypeError: Cannot read properties of null (reading 'scheduleId')
+    at Object.deleteDoctorSchedule (D:\Prj3\EyesClinicSystem\backend\service\doctorSchedule.js:301:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async deleteDoctorSchedule (D:\Prj3\EyesClinicSystem\backend\controller\doctorSchedule.js:56:9)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    23:11 08/07/2024 | [SYSTEM] |  GET /api/invoice/detail/6679b9dc1e820f5ac0bf0560 | [::1] 
+ TypeError: Cannot read properties of null (reading 'name')
+    at Object.getInvoiceDetail (D:\Prj3\EyesClinicSystem\backend\service\invoice.js:81:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getInvoiceDetail (D:\Prj3\EyesClinicSystem\backend\controller\invoice.js:25:27)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    
+    23:23 08/07/2024 | [SYSTEM] |  GET /api/invoice/detail/undefined | [::1] 
+ CastError: Cast to ObjectId failed for value "{ _id: 'undefined' }" (type Object) at path "_id" for model "Invoice"
+    at model.Query.exec (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4498:21)
+    at Query.then (D:\Prj3\EyesClinicSystem\backend\node_modules\mongoose\lib\query.js:4592:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    
+    21:19 17/07/2024 | [SYSTEM] |  GET /api/schedule/user/6586a81ca766d7866ca69d3c?page=undefined&size=undefined | [::1] 
+ TypeError: Cannot read properties of null (reading '_id')
+    at Object.getScheduleByUserId (D:\Prj3\EyesClinicSystem\backend\service\schedule.js:167:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getScheduleByUserId (D:\Prj3\EyesClinicSystem\backend\controller\schedule.js:32:27)
+    at async D:\Prj3\EyesClinicSystem\backend\middlewares\errorHandle.js:5:5
+    

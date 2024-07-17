@@ -38,11 +38,10 @@ const createDoctorSchedule = async (req, res) => {
 }
 
 const createDoctorScheduleByPhoneNumber = async (req, res) => {
-    const scheduleId = req.params
-    const {
-        patientPhone,
-    } = req.body;
-    var result = await doctorScheduleService.createDoctorScheduleByPhoneNumber({ scheduleId, patientPhone });
+    const { scheduleId } = req.params
+    const { phone } =  req.body;
+    console.log(req.query)
+    var result = await doctorScheduleService.createDoctorScheduleByPhoneNumber(scheduleId, phone );
     res.send({
         ...result,
     });

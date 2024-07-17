@@ -7,9 +7,51 @@ const { REGEX } = require('../config/regex');
 const User = require('../model/user')
 
 
+// const getAllInvoice = async () => {
+//     const invoice_list = await Invoice.find();
+//     const total = await Invoice.countDocuments();
+//     return {
+//         invoice_list,
+//         meta_data: {
+//             length: invoice_list.length,
+//             total,
+//         },
+//     };
+// };
 const getAllInvoice = async () => {
-    const invoice_list = await Invoice.find();
-    const total = await Invoice.countDocuments();
+    var invoice_list = [];
+    var invoices = [];
+    var total = Number;
+    invoices = await Invoice.find(
+        null,
+        'userId amount status content created_at updated_at'
+    );
+
+    for (let i = 0; i < invoices.length; i++) {
+        let invoice_detail = {
+            _id: String,
+            userName: String,
+            amount: Number,
+            status: Number,
+            content: String,
+            created_at: Date,
+            updated_at: Date,
+        };
+        const user = await User.findOne({ _id: invoices[i].userId });
+
+        invoice_detail._id = invoices[i]._id;
+        invoice_detail.userName = user ? user.name : null;
+        invoice_detail.amount = invoices[i].amount;
+        invoice_detail.status = invoices[i].status;
+        invoice_detail.content = invoices[i].content;
+        invoice_detail.created_at = invoices[i].created_at;
+        invoice_detail.updated_at = invoices[i].updated_at;
+
+        invoice_list.push(invoice_detail);
+    }
+
+    total = await Invoice.countDocuments();
+
     return {
         invoice_list,
         meta_data: {
@@ -18,6 +60,7 @@ const getAllInvoice = async () => {
         },
     };
 };
+
 const getAllUnpaidInvoices = async () => {
     const unpaidInvoices = await Invoice.find({ status: 0 });
     return {
@@ -27,8 +70,9 @@ const getAllUnpaidInvoices = async () => {
     };
 
 };
-const getAllInvoiceByUserId = async (userId) => {
-    const invoice_list = await Invoice.find({ user_id: userId });
+const getAllInvoiceByUserId = async (user_id) => {
+    const invoice_list = await Invoice.find({ userId: user_id });
+    console.log(invoice_list)
     const total = await Invoice.countDocuments();
     return {
         invoice_list,

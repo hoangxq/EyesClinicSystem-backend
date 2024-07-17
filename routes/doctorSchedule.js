@@ -17,7 +17,7 @@ Route.post(
 );
 
 Route.post(
-    '/register',
+    '/register/:scheduleId',
     // requireLogin,
     // requireRole(['ADMIN']),
     Trycatch(doctorScheduleController.createDoctorScheduleByPhoneNumber)

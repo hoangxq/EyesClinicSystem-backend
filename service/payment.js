@@ -23,7 +23,7 @@ const momoPaymentByInvoiceID = async (invoiceId, returnUrl) => {
         const accessKey = 'F8BBA842ECF85';
         const secretKey = 'K951B6PE1waDMi640xX08PD3vg6EkVlz';
         // const notifyUrl = 'http://localhost:8080/api/payment/momo-payment/check/callback';
-        const notifyUrl = 'https://8099-113-23-64-215.ngrok-free.app/api/payment/momo-payment/update/callback';
+        const notifyUrl = 'https://3926-2405-4802-f820-8680-25dd-d9f4-a7b1-84b7.ngrok-free.app/api/payment/momo-payment/update/callback';
         const requestType = 'captureWallet';
         const extraData = 'eyJ1c2VybmFtZSI6ICJtb21vIn0=';
         // const rawSignature = `accessKey=${accessKey}&amount=${amount}&extraData=${extraData}&ipnUrl=${notifyUrl}&orderId=${orderId}&orderInfo=${orderInfo}&partnerCode=${partnerCode}&redirectUrl=${returnUrl}&requestId=${requestId}&requestType=${requestType}`;

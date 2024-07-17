@@ -4,8 +4,8 @@ const { Schema } = mongoose;
 
 const DoctorSchema = new Schema({
   userId: {
-    type: Schema.Types.ObjectId, // Sử dụng kiểu ObjectId để tham chiếu
-    ref: 'User', // Tham chiếu đến model 'User'
+    type: Schema.Types.ObjectId, 
+    ref: 'User', 
     required: true,
   },
   hospital: {

@@ -137,10 +137,9 @@ const createDoctorSchedule = async ({
     };
 }
 
-const createDoctorScheduleByPhoneNumber = async ({
-    scheduleId,
-    patientPhone,
-}) => {
+const createDoctorScheduleByPhoneNumber = async (scheduleId, patientPhone) => {
+    console.log('aaaaaaaaaaaaaaaaaa')
+    console.log(scheduleId, patientPhone)
     const schedule = await Schedule.findOne({ _id: scheduleId });
     if (!schedule) {
         return {
@@ -149,6 +148,7 @@ const createDoctorScheduleByPhoneNumber = async ({
                 'Create schedule failed, the schedule ID is not exist. Please try again',
         };
     }
+    console.log('aaaaaaaaaaaaaaaaaa')
     const existingPatient = await User.findOne({ phone: patientPhone });
     if (!existingPatient) {
         return {
@@ -390,13 +390,14 @@ const cancelDoctorScheduleByPatient = async (doctorScheduleId) => {
         console.log("Schedule not found");
         return { status: CONFIG_STATUS.FAIL, message: "Schedule not found" };
     }
+    console.log(schedule)
 
     const currentDate = new Date();
     const scheduleDate = new Date(schedule.date);
     const oneDayBeforeScheduleDate = new Date(scheduleDate);
     oneDayBeforeScheduleDate.setDate(scheduleDate.getDate() - 1);
 
-    if (currentDate.toDateString() > oneDayBeforeScheduleDate.toDateString()) {
+    if (currentDate.toDateString() <= oneDayBeforeScheduleDate.toDateString()) {
         console.log("Cannot cancel the appointment. It should be canceled at least 1 day before the appointment date.");
         return { status: CONFIG_STATUS.FAIL, message: "Cannot cancel the appointment. It should be canceled at least 1 day before the appointment date." };
     }
@@ -437,7 +438,6 @@ const checkAndCancelSchedule = async () => {
             console.log("Doctor Schedule: ", doctorSchedule);
 
             if (doctorSchedule) { // Kiểm tra nếu doctorSchedule có dữ liệu
-                // Kiểm tra scheduleId tồn tại trong doctorSchedule
                 if (!doctorSchedule.scheduleId) {
                     console.log("No scheduleId found for doctorSchedule: ", doctorSchedule._id);
                     continue;
@@ -483,7 +483,7 @@ const cancelDoctorScheduleById = async (id) => {
 }
 
 
-cron.schedule('26 22 * * *', async () => {
+cron.schedule('0 0 * * *', async () => {
     console.log('Running the scheduled job to check and cancel schedules...');
     await checkAndCancelSchedule();
 });
@@ -501,7 +501,7 @@ const sendReminderEmail = async (email, patientName, appointmentDate, reminderTy
     });
 
     const mailOptions = {
-        from: 'quynhanh1392002@gmail.com', // Thay bằng email của bạn
+        from: 'quynhanh1392002@gmail.com',
         to: email,
         subject: reminderType === 'payment' ? 'Nhắc nhở thanh toán hóa đơn khám bệnh' : 'Nhắc nhở lịch khám bệnh',
         text: reminderType === 'payment'
@@ -565,13 +565,14 @@ const checkAndSendAppointmentReminder = async () => {
         }
     }
 };
+
 // Lên lịch công việc cron để kiểm tra và gửi nhắc nhở
-cron.schedule('0 9 * * *', async () => { // Chạy vào 9 giờ sáng hàng ngày
+cron.schedule('0 9 * * *', async () => { 
     console.log('Running the scheduled job to check and send payment reminders...');
     await checkAndSendPaymentReminder();
 });
 
-cron.schedule('0 10 * * *', async () => { // Chạy vào 10 giờ sáng hàng ngày
+cron.schedule('0 10 * * *', async () => { 
     console.log('Running the scheduled job to check and send appointment reminders...');
     await checkAndSendAppointmentReminder();
 });

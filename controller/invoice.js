@@ -14,6 +14,7 @@ const getAllInvoice = async (req, res) => {
 const getAllInvoiceByUserId = async (req, res) => {
     // const user_list = await userService.getAllUser(req.pagination);
     const { user_id } = req.params;
+    console.log(user_id)
     const invoice_list = await invoiceService.getAllInvoiceByUserId(user_id);
     dataHandle(invoice_list, req, res);
 };
@@ -44,6 +45,36 @@ const createInvoice = async (req, res) => {
         message: 'Create Invoice successful.',
         data: {
             newInvoice,
+        },
+    });
+};
+
+const paidByCash = async (req, res) => {
+    const {
+        invoice_id,
+    } = req.params;
+    console.log(invoice_id)
+    const updateInvoice = await invoiceService.updateStatusInvoice1(invoice_id)
+    res.send({
+        status: CONFIG_STATUS.SUCCESS,
+        message: 'Update Invoice successful.',
+        data: {
+            updateInvoice,
+        },
+    });
+};
+
+const refundByCash = async (req, res) => {
+    const {
+        invoice_id,
+    } = req.params;
+    console.log(invoice_id)
+    const updateInvoice = await invoiceService.updateStatusInvoice2(invoice_id)
+    res.send({
+        status: CONFIG_STATUS.SUCCESS,
+        message: 'Update Invoice successful.',
+        data: {
+            updateInvoice,
         },
     });
 };
@@ -92,5 +123,7 @@ module.exports = {
     createInvoice,
     updateInvoiceStatus1,
     updateInvoiceStatus2,
-    deleteInvoiceById
+    deleteInvoiceById,
+    paidByCash,
+    refundByCash
 }

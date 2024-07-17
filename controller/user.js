@@ -28,6 +28,20 @@ const getUserByID = async (req, res) => {
     });
   }
 };
+
+const getUserByPhoneNumber = async (req, res) => {
+  const  phone  = req.query.phone;
+  console.log(req.query.phone)
+  const user_info = await userService.getUserByPhoneNumber(phone);
+  if (user_info) {
+    dataHandle(user_info, req, res);
+  } else {
+    res.status(400).send({
+      status: CONFIG_STATUS.FAIL,
+      message: 'User is not exist',
+    });
+  }
+};
 const getUserInfo = async (req, res) => {
   const token = req.headers.authorization.split(' ')[1];
   const decodedToken = verifyToken(token);
@@ -249,5 +263,6 @@ module.exports = {
   updateUserByID,
   updateUserPassword,
   blockUser,
-  unBlockUser
+  unBlockUser,
+  getUserByPhoneNumber
 };
