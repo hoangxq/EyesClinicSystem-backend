@@ -26,6 +26,11 @@ mongoose.connect(
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
+    "auth": {
+      "authSource": "admin"
+    },
+    "user": process.env.DATABASE_USERNAME,
+    "pass": process.env.DATABASE_PASSWORD
   }
 )
 .then(() => {
